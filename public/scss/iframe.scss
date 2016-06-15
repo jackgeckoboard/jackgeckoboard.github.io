@@ -1,0 +1,28 @@
+.iframe-container{
+  width:1920px;
+  height:1080px;
+  overflow: hidden;
+  position: relative;
+  transform: matrix3d(1, 0, 0, 0.00026, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) translate(24px, 296px) skew(0deg, 6.8deg) scale(0.81, 1.008);
+
+  iframe{
+    position:absolute;
+    overflow: hidden;
+  }
+
+  .unblur{
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 90%,rgba(0,0,0,0) 95%);
+  }
+
+  .blur{
+    -webkit-filter:blur(2px);
+  }
+}
+
+.reflection{
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 75%);
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  transform: translate(1600px, -600px) rotate(245deg);
+}

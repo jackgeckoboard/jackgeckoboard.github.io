@@ -1,1 +1,64 @@
-Hello World
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="public/css/main.css">
+        <script src="public/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="preview">
+          <div class="iframe-container">
+            <iframe src='https://internalstats.geckoboard.com/dashboards/4008FAC3F40B2040' height=1080px width=1940px frameBorder="0" class="blur" scrolling="no">
+            </iframe>
+            <iframe src='https://internalstats.geckoboard.com/dashboards/4008FAC3F40B2040' height=1080px width=1940px frameBorder="0" class="unblur" scrolling="no">
+            </iframe>
+            <div class="reflection">
+            </div>
+          </div>
+        </div>
+        <div class="url-input">
+
+            <input id="urlinput" type="text" name="url" placeholder="Paste sharing URL">
+
+        </div>
+
+        <!--SVG Masks-->
+
+        <svg height="0">
+          <defs>
+            <mask id="mask-linear">
+              <rect width="400" height="300" fill="url(#l1)"></rect>
+              <linearGradient id="l1" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="white" offset="0%"/>
+                <stop stop-color="black" offset="30%"/>
+                <stop stop-color="white" offset="100%"/>
+              </linearGradient>
+            </mask>
+            <filter id="filtre1">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+            </filter>
+            <filter id="filtre2">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+            </filter>
+          </defs>
+          </svg>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="public/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="public/js/plugins.js"></script>
+        <script src="public/js/main.js"></script>
+
+    </body>
+</html>
